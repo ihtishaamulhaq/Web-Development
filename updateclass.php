@@ -1,17 +1,12 @@
+// This code is used to update  the classes
 <?php include('dbcon.php');?>
-
-
 <?php 
 
 if(isset($_POST['update_c'])){
 
-
-   
     $id= $_POST['update_id'];
     $name= $_POST['class_name'];
     
-   
-       
         if($name =="" || empty($name)){
             header('location:newclassView.php?message=You should enter class name');
         }
